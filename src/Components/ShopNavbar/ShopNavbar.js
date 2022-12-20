@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState, useContext, useEffect} from 'react'
 import './ShopNavbar.css'
 import logo2 from '../../assets/tesla-logo-png-201.png'
 import logo from '../../assets/tesla-logo-png-20.png'
@@ -7,10 +7,13 @@ import {AiOutlineClose} from 'react-icons/ai';
 import {BsCart2} from 'react-icons/bs'
 import {Link} from "react-router-dom"
 // import { SlArrowDown } from "react-icons/sl";
+import {CartContext} from "../../App"
+
 
 
 function ShopNavbar() {
-
+  const cartItem = useContext(CartContext);
+  const cart = cartItem.cart
   const [toggleMenu, setToggleMenu] = useState(false);
   const [navbar, setNabvar] = useState(false);
 
@@ -19,15 +22,29 @@ function ShopNavbar() {
 
   // const showMenu = () => setToggleMenu(!toggleMenu)
 
-  const changeBackground =() =>{
-    if(window.scrollY >=1){
+  var lastScroll = 0
+  const changeBackground =(e) =>{
+    var currentScroll = window.scrollY
+    // var currentScroll = e.clientY
+    console.log(lastScroll, currentScroll)
+    if(currentScroll > lastScroll){
       setNabvar(true)
-    }else{
+    } else if(currentScroll < lastScroll){
+      setNabvar(true)
+    }
+    else{
       setNabvar(false);
     }
+    lastScroll = currentScroll
   }
+  useEffect(() => {
+    window.addEventListener('scroll', changeBackground);
+    return () => {
+      window.removeEventListener('scroll', changeBackground);
+    }
+  }, [navbar])
 
-  window.addEventListener('scroll', changeBackground);
+  // window.addEventListener('scroll', changeBackground);
   return (
     <div class={navbar ? 'navbar active' : 'navbar'}>
         <div className="logo">
@@ -45,8 +62,12 @@ function ShopNavbar() {
           </ul>
         </div>
         <div className="buttons">
-            <Link to="/cart">
+            <Link 
+            to="/cart" 
+            className={cart.length >= 1 && cart[0] !== {} ? 'cart active' : 'cart'}
+            >
               <BsCart2 className={navbar ? 'shop-cart active' : 'shop-cart'}/>
+              <p>{cart.length}</p>
             </Link>
             {/* <Link to="sign-in" className='account'>Account</Link> */}
             <Link to="/sign-in" className={navbar ? 'shoplogin active' : 'shoplogin'}> Logout</Link>
