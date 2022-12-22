@@ -81,7 +81,7 @@ function Navbar() {
             <li className='opensans'><a href="#contact">Solar Roof</a></li>
             <li className='opensans'><a href="#contact">Solar Panels</a></li>
             <li className='myAccount' onClick={handleRoute}><a href="#gallery">Account</a></li>
-            <li className='home-login'><a href="/sign-in">Login</a></li>
+            <Link to="/sign-in"><li>Login</li></Link>
             
         </ul>
         </div>

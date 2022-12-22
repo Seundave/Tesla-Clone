@@ -32,7 +32,7 @@ const Cart = () => {
             <div className='cart-title'>
              <h1>Cart</h1>
             </div>
-            <div>
+            <div className='cart-products'>
                 {myCart[0] === {} || myCart[0] === undefined  ? 
                 <p>Nothing in Cart</p> : 
                 myCart.map((item, index)=>{
@@ -45,25 +45,32 @@ const Cart = () => {
                                             : kidWears[item.id-1].image} 
                                 alt="img"
                                 />
-                                <p>{item.name}</p>
                             </div>
 
                             <div className='price-change-button'>
-                                <button onClick={() => handleChange(item, 1)} className="increment">+</button>
-                                <button className='item-price'>${item.price * item.quantity}</button>
-                                <button onClick={() => handleChange(item, -1)} className="decrement">-</button>
+                                <p>{item.name}</p>
+                                <div className="price-change">
+                                    <div className="Price-change">
+                                        <span className='total-price'>${item.price}</span>
+                                    </div>
+                                    <div className='price-change-btn'>
+                                        <button onClick={() => handleChange(item, 1)} className="increment">+</button>
+                                        <button className='item-price'>${item.price * item.quantity}</button>
+                                        <button onClick={() => handleChange(item, -1)} className="decrement">-</button>
+                                        <div className="remove-button">
+                                            <button onClick={() => handleRemove(item.id)}>Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="total">
+                                        <span>Total Price of your Cart</span>
+                                        <span> ${price}</span>
+                                </div>
                             </div>
-                            <div>
-                                <span className='total-price'>${item.price}</span>
-                                <button onClick={() => handleRemove(item.id)}>Remove</button>
-                            </div>
+                           
                     </div>
                     )}
                 )}
-                <div className="total">
-                    <span>Total Price of your Cart</span>
-                    <span> ${price}</span>
-                </div>
             </div>
             <Footer/>
         </article>
