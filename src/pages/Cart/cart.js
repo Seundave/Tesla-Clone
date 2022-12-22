@@ -20,7 +20,7 @@ const Cart = () => {
     }, [navigate])
     useEffect(() => {
         let ans = 0;
-        if(myCart[0] !== [{}] || myCart[0] !== undefined){
+        if(myCart[0] !== {} || myCart[0] !== undefined){
             myCart.map((item) => (ans += item.quantity * item.price));
         }
         setPrice(ans);
@@ -33,7 +33,7 @@ const Cart = () => {
              <h1>Cart</h1>
             </div>
             <div>
-                {myCart[0] === [{}] || myCart[0] === undefined  ? 
+                {myCart[0] === {} || myCart[0] === undefined  ? 
                 <p>Nothing in Cart</p> : 
                 myCart.map((item, index)=>{
                     return (
@@ -72,4 +72,3 @@ const Cart = () => {
 }
 
 export default Cart
-
