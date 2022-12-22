@@ -5,6 +5,7 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import {AiOutlineClose} from 'react-icons/ai';
 import {BsCart2} from 'react-icons/bs'
 import {useNavigate} from "react-router-dom"
+import {Link} from 'react-router-dom'
 // import { SlArrowDown } from "react-icons/sl";
 
 
@@ -35,6 +36,14 @@ function Navbar() {
       navigate("/sign-in")
     }
   }
+
+  const handleCart = ()=>{
+    if(localStorage.getItem("authenticated")){
+      navigate("/cart")
+    } else{
+      navigate("/sign-in")
+    }
+  }
   return (
     <div className={navbar ? 'home-navbar active' : 'home-navbar'}>
         <div className="home-logo">
@@ -51,12 +60,12 @@ function Navbar() {
           </ul>
         </div>
         <div className="home-buttons">
-            <BsCart2 className='cart'/>
+            <BsCart2 className='cart' onClick={handleCart}/>
             <p 
             className='myAccount'
             onClick={handleRoute}
             >Account</p>
-            <a href="#login" className="home-login"> Logout</a>
+            <Link to="/sign-in" className="home-login"> Login</Link>
         </div>
 
         <div className={navbar ? 'navbar_smallscreen active' : 'navbar_smallscreen'}>
@@ -71,8 +80,8 @@ function Navbar() {
             <li className='opensans'><a href="#menu">Model X</a></li>
             <li className='opensans'><a href="#contact">Solar Roof</a></li>
             <li className='opensans'><a href="#contact">Solar Panels</a></li>
-            <li className='opensans'><a href="#gallery">Account</a></li>
-            <li className='opensans'><a href="#contact">Logout</a></li>
+            <li className='myAccount' onClick={handleRoute}><a href="#gallery">Account</a></li>
+            <li className='home-login'><a href="/sign-in">Login</a></li>
             
         </ul>
         </div>

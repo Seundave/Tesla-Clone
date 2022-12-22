@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('/public/desktop_Mini (1).avif');
+    background-image: url('/public/_25-HP-SolarPanels-D.jpg');
     background-repeat: no-repeat;
     text-align: center;
     background-size: cover;
@@ -31,7 +31,7 @@
 
 .shop-now{
     font-family: 'Montserrat', sans-serif;
-    width:300px;
+    width:30%;
     height:40px;
     border-radius: 5px;
     border:none;
@@ -42,8 +42,54 @@
     cursor: pointer;
 }
 
+
+@media screen and (max-width:900px), (max-width:1000px) {
+    .tenthbanner{
+        background-image: url('/public/_25-HP-SolarPanels-D.jpeg');
+        object-fit: contain;
+    }
+
+    .tenthbanner > h1{
+        margin-top: 460px;
+    }
+
+    .shop-now{
+        width:50%;
+    }
+}  
+
+@media screen and (max-width:600px) {
+    .tenthbanner{
+        background-image: url('/public/_25-HP-SolarPanels-D.jpeg');
+    }
+
+    .shop-now{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .tenthbanner > h1{
+        margin-top: 430px;
+    }
+}
+
+@media screen and (max-width:400px),(max-width:500px) {
+    .tenthbanner{
+        background-image: url('/public/_25-HP-SolarPanels-M.jpeg');
+    }
+
+    /* .tenthbanner > img{
+        margin:30px 0px;
+    } */
+
+    .shop-now{
+        width:60%;
+    }
+}
+
 @media screen and (max-width:300px) {
     .shop-now{
-        width:200px;
+        width:80%;
     }
 }

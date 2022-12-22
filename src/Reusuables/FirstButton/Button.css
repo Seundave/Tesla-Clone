@@ -10,7 +10,7 @@
 
 .customOrder{
     font-family: 'Montserrat', sans-serif;
-    width:300px;
+    width:30%;
     height:40px;
     border-radius: 5px;
     border:none;
@@ -25,7 +25,7 @@
 
 .Existing{
     font-family: 'Montserrat', sans-serif;
-    width:300px;
+    width:30%;
     height:40px;
     border-radius: 5px;
     border:none;
@@ -80,6 +80,10 @@
         /* display: flex; */
         margin-top: 800px;
     } 
+
+    .Existing,.customOrder{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -87,6 +91,10 @@
         /* display: flex; */
         margin-top: 700px;
     } 
+
+    .Existing,.customOrder{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -96,7 +104,12 @@
         margin-top: 370px;
     }
 
+    .Existing{
+        width: 100%;
+    }
+
     .customOrder{
+        width: 100%;
         margin-right:0px;
         margin-bottom: 10px;
     }
@@ -109,17 +122,27 @@
         margin-top: 470px;
     }
 
+    .Existing{
+        width: 100%;
+    }
+
     .customOrder{
         margin-right:0px;
         margin-bottom: 10px;
+        width: 100%;
     }
 }
 
 @media screen and (max-width:400px) {
     .FirstButton{
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin-top: 300px;
+    }
+
+    .customOrder,.Existing{
+        width:100%;
     }
 
 }

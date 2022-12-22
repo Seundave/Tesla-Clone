@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import './Banner.css'
-import {BsChevronDown} from 'react-icons/bs'
+// import {BsChevronDown} from 'react-icons/bs'
 import FirstButton from '../../Reusuables/FirstButton/Button'
+import {Link} from 'react-router-dom'
 // import {motion} from 'framer-motion'
 
 function Banner() {
@@ -24,9 +25,9 @@ function Banner() {
        <Navbar/>
        <div className="banner-info">
             <h1>Model 3</h1>
-            <a href="https://www.google.com">Schedule a Test Drive</a>
+            <Link to="#">Schedule a Test Drive</Link>
             <FirstButton/>
-            <BsChevronDown animate={{rotate: [0,50,0,0]}} transition={{repeat:Infinity,duration:3.5}} className='arrow-down'/>
+            {/* <BsChevronDown animate={{rotate: [0,50,0,0]}} transition={{repeat:Infinity,duration:3.5}} className='arrow-down'/> */}
        </div>
     </div>
   )

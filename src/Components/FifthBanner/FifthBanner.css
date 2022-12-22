@@ -18,17 +18,49 @@
     /* background-color: blue; */
 }
 
-.fifthbanner> h1{
+.fifth-banner-info> h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    margin-top:40px;
+    /* margin-top:20px; */
     font-size: 40px;
 }
 
-.fifthbanner> p{
+.fifth-banner-info{
+    width:80%;
+    /* margin-top: 80px; */
+}
+
+.fifth-banner-info > p{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color:black;
+    margin-bottom: 300px;
+}
+
+
+@media screen and (max-width:900px) {
+    .fifthbanner{
+        width: 100%;
+        background-image: url('/public/_25-HP-SolarPanels-D.jpeg');
+        background-size: 100% 100%;
+        height:100vh;
+        /* height: auto; */
+        /* padding-bottom: 100px; */
+    }
+
+    .fifth-banner-info > h1{
+        margin-top:50px;
+    }
+}
+
+@media screen and (max-width:400px),(max-width:500px) {
+   .fifthbanner{
+    background-image: url('/public/_25-HP-SolarPanels-M.jpeg');
+    background-size: 100% 100%;
+    /* height: auto; */
+    /* padding-bottom: 100px; */
+    height:100vh;
+   }
 }
 
 @media screen and (max-width:300px) {

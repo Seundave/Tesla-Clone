@@ -1,4 +1,4 @@
-import React,{useState, useContext, useEffect} from 'react'
+import React,{useState, useContext} from 'react'
 import './ShopNavbar.css'
 import logo2 from '../../assets/tesla-logo-png-201.png'
 import logo from '../../assets/tesla-logo-png-20.png'
@@ -18,31 +18,41 @@ function ShopNavbar() {
   const [navbar, setNabvar] = useState(false);
 
   const showMenu = () => setToggleMenu(!toggleMenu)
+
+  const changeBackground =() =>{
+    if(window.scrollY >=1){
+      setNabvar(true)
+    }else{
+      setNabvar(false);
+    }
+  }
+
+  window.addEventListener('scroll', changeBackground);
   
 
   // const showMenu = () => setToggleMenu(!toggleMenu)
 
-  var lastScroll = 0
-  const changeBackground =(e) =>{
-    var currentScroll = window.scrollY
-    // var currentScroll = e.clientY
-    console.log(lastScroll, currentScroll)
-    if(currentScroll > lastScroll){
-      setNabvar(true)
-    } else if(currentScroll < lastScroll){
-      setNabvar(true)
-    }
-    else{
-      setNabvar(false);
-    }
-    lastScroll = currentScroll
-  }
-  useEffect(() => {
-    window.addEventListener('scroll', changeBackground);
-    return () => {
-      window.removeEventListener('scroll', changeBackground);
-    }
-  }, [navbar])
+  // var lastScroll = 0
+  // const changeBackground =(e) =>{
+  //   var currentScroll = window.scrollY
+  //   // var currentScroll = e.clientY
+  //   console.log(lastScroll, currentScroll)
+  //   if(currentScroll > lastScroll){
+  //     setNabvar(true)
+  //   } else if(currentScroll < lastScroll){
+  //     setNabvar(true)
+  //   }
+  //   else{
+  //     setNabvar(false);
+  //   }
+  //   lastScroll = currentScroll
+  // }
+  // useEffect(() => {
+  //   window.addEventListener('scroll', changeBackground);
+  //   return () => {
+  //     window.removeEventListener('scroll', changeBackground);
+  //   }
+  // }, [navbar])
 
   // window.addEventListener('scroll', changeBackground);
   return (
@@ -55,10 +65,9 @@ function ShopNavbar() {
         </div>
         <div className={navbar ? 'shopnavbar-links active' : 'shopnavbar-links'}>
           <ul>
-            <li>Charging</li>
-            <li>Vehicle Accessories</li>
-            <li>Apparel</li>
-            <li>Lifestyle</li>
+            <Link to="/shop/men-apparel"><li>Men Apparel</li></Link>
+            <Link to="/shop/women-apparel"><li>Women Apparel</li></Link>
+            <Link to="/shop/kids-apparel"><li>Kids Apparel</li></Link>
           </ul>
         </div>
         <div className="buttons">
@@ -80,11 +89,10 @@ function ShopNavbar() {
         <div className="smallscreen-overlay">
           <AiOutlineClose color="#fff" cursor="pointer" fontSize={27} className="overlay-close" onClick={showMenu}/>
           <ul className='smallscreen-links' onClick={showMenu}>
-            <li className='opensans'><a href="#home">Charging</a></li>
-            <li className='opensans'><a href="#about">Vehicle Accessories</a></li>
-            <li className='opensans'><a href="#menu">Apparel</a></li>
-            <li className='opensans'><a href="#gallery">Lifestyle</a></li>
-            <li className='opensans'><a href="#contact">Contact</a></li>
+            <Link to="/shop/men-apparel"><li>Men Apparel</li></Link>
+            <Link to="/shop/women-apparel"><li>Women Apparel</li></Link>
+            <Link to="/shop/kids-apparel"><li>Kids Apparel</li></Link>
+            <Link to="/sign-in"> <li>Logout</li></Link>
             
         </ul>
         </div>

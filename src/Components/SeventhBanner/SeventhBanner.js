@@ -5,9 +5,11 @@ import './SeventhBanner.css'
 function SeventhBanner() {
   return (
     <div className='seventhbanner'>
-        <h1>Model S Accessories</h1>
-        {/* <img src={accessories} alt="accessories" className='accessories'/> */}
-       <button className='shop-now'>Shop Now</button>
+        <div className="seventh-banner-info">
+          <h1>Model S Accessories</h1>
+          {/* <img src={accessories} alt="accessories" className='accessories'/> */}
+          <button className='shop-now'>Shop Now</button>
+        </div>
     </div>
   )
 }

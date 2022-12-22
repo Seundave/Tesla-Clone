@@ -5,9 +5,11 @@ import './EighthBanner.css'
 function EighthBanner() {
   return (
     <div className='eighthbanner'>
-        <h1>Model X Accessories</h1>
-        {/* <img src={accessories} alt="accessories" className='accessories'/> */}
-       <button className='shop-now'>Shop Now</button>
+        <div className="eight-banner-info">
+          <h1>Model X Accessories</h1>
+          {/* <img src={accessories} alt="accessories" className='accessories'/> */}
+        <button className='shop-now'>Shop Now</button>
+        </div>
     </div>
   )
 }

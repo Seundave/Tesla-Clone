@@ -88,6 +88,21 @@
     
 }
 
+@media screen and (max-width:900px),(max-width:1000px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-container{
+        width:100%;
+    }
+
+    .cards-container:nth-child(2){
+        margin:10px 0px ;
+    }
+}
+
 @media screen and (max-width:400px),(max-width:500px) {
     .cards{
         width: 100%;
