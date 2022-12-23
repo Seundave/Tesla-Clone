@@ -275,6 +275,10 @@
         margin-left: 500px;
     }
 
+    .smallscreen-links  > a{
+        text-decoration: none;
+    }
+
     .smallscreen-links > :nth-child(4){
         display: none;
     }
@@ -307,6 +311,10 @@
     .smallscreen-links{
         font-family: 'Montserrat', sans-serif;
     }
+
+    .smallscreen-links  > a{
+        text-decoration: none;
+    }
     .smallscreen-links > :nth-child(4){
         display: none;
     }
@@ -318,6 +326,10 @@
         display: block;
         cursor: pointer; 
         align-items:center ;
+    }
+
+    .smallscreen-links  > a{
+        text-decoration: none;
     }
 
     /* .navbar_logo >h1{
@@ -387,6 +399,11 @@
     .smallscreen-links{
         font-family: 'Montserrat', sans-serif;
     }
+
+    .smallscreen-links  > a{
+        text-decoration: none;
+    }
+
     .smallscreen-links > :nth-child(4){
         display: block;
     }

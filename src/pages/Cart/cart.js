@@ -7,6 +7,7 @@ import './cart.css'
 import {CartContext} from "../../App"
 import ShopNavbar from '../../Components/ShopNavbar/ShopNavbar'
 import Footer from '../../Components/Footer/Footer'
+import {AiFillDelete} from 'react-icons/ai'
 
 const Cart = () => {
     const CartItem = useContext(CartContext);
@@ -54,20 +55,22 @@ const Cart = () => {
                                         <span className='total-price'>${item.price}</span>
                                     </div>
                                     <div className='price-change-btn'>
-                                        <button onClick={() => handleChange(item, 1)} className="increment">+</button>
-                                        <button className='item-price'>${item.price * item.quantity}</button>
-                                        <button onClick={() => handleChange(item, -1)} className="decrement">-</button>
+                                        <div className="price-change-btns">
+                                            <button onClick={() => handleChange(item, 1)} className="increment">+</button>
+                                            <button className='item-price'>${item.price * item.quantity}</button>
+                                            <button onClick={() => handleChange(item, -1)} className="decrement">-</button>
+                                        </div>
                                         <div className="remove-button">
-                                            <button onClick={() => handleRemove(item.id)}>Remove</button>
+                                            {/* <button onClick={() => handleRemove(item.id)}>Remove</button> */}
+                                            <AiFillDelete onClick={() => handleRemove(item.id)}/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="total">
-                                        <span>Total Price of your Cart</span>
-                                        <span> ${price}</span>
+                                    <span>Total Price of your Cart</span>
+                                    <span> ${price}</span>
                                 </div>
                             </div>
-                           
                     </div>
                     )}
                 )}
