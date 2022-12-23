@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import scrollRef from 'react'
-// import Meal from './Meal'
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import gallery01 from '../../assets/Desktop-ModelY.jpg'
 import gallery02 from '../../assets/Homepage-Model-S-Desktop-LHD.jpg'
@@ -8,17 +7,9 @@ import gallery03 from '../../assets/Desktop-ModelY.jpg'
 import gallery04 from '../../assets/tesla-g123fac81e_1920.jpg'
 import gallery05 from '../../assets/Desktop-ModelY.jpg'
 import './ProductSlide.css'
-// import './Images.css'
 import { Images } from 'react-bootstrap-icons';
-// import spoon from '../../assets/spoon.png'
-
 
 const images = [gallery01, gallery02, gallery03, gallery04, gallery05]
-// const text = ["Men's Raven Lightweight Zip Up Bomber Jacket", "Men's Raven Lightweight Zip Up Bomber Jacket"]
-
-
-
-
 function Photo() {
   
   const [first, setFirst] = useState (0);

@@ -19,20 +19,14 @@
     width:35%;
     display: flex;
     flex-direction: row;
-    /* padding-top:30px; */
     padding:0px  10px;
-    /* padding-left: 80px; */
 }
 
 .signin{
     display: flex;
     flex-direction: column;
     width:40%;
-    /* justify-content: center; */
-    /* align-items: center; */
     margin:auto;
-    /* background-color: aqua; */
-    
 }
 
 .signin-text{
@@ -45,10 +39,6 @@
     font-family: 'Montserrat', sans-serif;
     padding-left:10%;
     margin-bottom: 30px;
-    /* margin-right:300px; */
-    /* margin-bottom: 15px; */
-    /* display: flex; */
-    /* float: left; */
 }
 
 .label-text{
@@ -61,7 +51,6 @@
 
 form{
     width:100%;
-    /* text-align: center; */
 }
 
 .form-info{
@@ -105,7 +94,6 @@ form > input{
     justify-content: center;
     margin-top:20px;
     margin-bottom: 30px;
-    /* background-color: aqua; */
 }
 
 .password > div{
@@ -131,13 +119,6 @@ form > input{
     justify-content: center;
     align-items: center;
     padding-bottom:10px;
-    /* background-color: aqua; */
-    /* flex-direction: row; */
-    /* width:100%; */
-    
-    /* height:1px; */
-    /* background-color:red; */
-    /* margin:0 10px; */
 }
 
 .lines > hr{
@@ -166,15 +147,12 @@ form > input{
     border:2px solid black;
     color: black;
     font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    /* background-color: grey; */
-    
+    cursor: pointer;    
 }
 
 .create-account:hover{
     background-color: black;
     color:white;
-    /* border:2px grey; */
 }
 
 @media screen and (max-width:400px),(max-width:500px) {
@@ -203,10 +181,6 @@ form > input{
         justify-content: flex-start;
         padding-left: 30px;
     }
-
-    /* .password > a{
-        font-size:17px;
-    } */
 }
 
 @media screen and (max-width:900px), (max-width:1000px) {
@@ -219,10 +193,6 @@ form > input{
         justify-content: flex-start;
         padding-left: 30px;
     }
-
-    /* .password > a{
-        font-size:20px;
-    } */
 }
 
 @media screen and (max-width:300px) {
@@ -237,12 +207,4 @@ form > input{
     .sign-logo > img{
         width: 40%;
     }
-
-    /* .password > a{
-        margin: 0px 10px;
-    } */
-
-     /* .password > a{
-        font-size:10px;
-    } */
 }

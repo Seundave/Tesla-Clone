@@ -21,7 +21,6 @@
     overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;  
-    /* height:50vh; */
 }
 
 
@@ -167,9 +166,5 @@
     .app__gallery-images_container >:nth-child(1){
         display: block;
     }
-
-    /* .app__gallery-images_container >:nth-child(2){
-        display: none;
-    } */
 }
 

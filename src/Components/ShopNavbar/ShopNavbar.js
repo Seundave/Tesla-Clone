@@ -6,7 +6,6 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import {AiOutlineClose} from 'react-icons/ai';
 import {BsCart2} from 'react-icons/bs'
 import {Link} from "react-router-dom"
-// import { SlArrowDown } from "react-icons/sl";
 import {CartContext} from "../../App"
 
 
@@ -29,32 +28,6 @@ function ShopNavbar() {
 
   window.addEventListener('scroll', changeBackground);
   
-
-  // const showMenu = () => setToggleMenu(!toggleMenu)
-
-  // var lastScroll = 0
-  // const changeBackground =(e) =>{
-  //   var currentScroll = window.scrollY
-  //   // var currentScroll = e.clientY
-  //   console.log(lastScroll, currentScroll)
-  //   if(currentScroll > lastScroll){
-  //     setNabvar(true)
-  //   } else if(currentScroll < lastScroll){
-  //     setNabvar(true)
-  //   }
-  //   else{
-  //     setNabvar(false);
-  //   }
-  //   lastScroll = currentScroll
-  // }
-  // useEffect(() => {
-  //   window.addEventListener('scroll', changeBackground);
-  //   return () => {
-  //     window.removeEventListener('scroll', changeBackground);
-  //   }
-  // }, [navbar])
-
-  // window.addEventListener('scroll', changeBackground);
   return (
     <div class={navbar ? 'navbar active' : 'navbar'}>
         <div className="logo">
@@ -78,7 +51,6 @@ function ShopNavbar() {
               <BsCart2 className={navbar ? 'shop-cart active' : 'shop-cart'}/>
               <p>{cart.length}</p>
             </Link>
-            {/* <Link to="sign-in" className='account'>Account</Link> */}
             <Link to="/sign-in" className={navbar ? 'shoplogin active' : 'shoplogin'}> Logout</Link>
         </div>
 

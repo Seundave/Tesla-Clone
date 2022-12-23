@@ -17,7 +17,6 @@ const Shop = () => {
         <NinthBanner/>
         <TenthBanner/>
         <Footer/>
-        {/* <ProductSlide/> */}
     </div>
   )
 }

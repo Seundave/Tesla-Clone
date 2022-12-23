@@ -6,7 +6,6 @@ import FourthBanner from '../../Components/FourthBanner/FourthBanner';
 import FifthBanner from '../../Components/FifthBanner/FifthBanner';
 import SixthBanner from '../../Components/SixthBanner/SixthBanner';
 import Footer from '../../Components/Footer/Footer';
-// import Signin from '../../pages/Sign-in/signin';
 
 const Home = () => {
   return (
@@ -18,7 +17,6 @@ const Home = () => {
       <FifthBanner/>
       <SixthBanner/>
       <Footer/>
-      {/* <Signin/> */}
     </div>
   )
 }

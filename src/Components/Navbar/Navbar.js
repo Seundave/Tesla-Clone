@@ -6,7 +6,7 @@ import {AiOutlineClose} from 'react-icons/ai';
 import {BsCart2} from 'react-icons/bs'
 import {useNavigate} from "react-router-dom"
 import {Link} from 'react-router-dom'
-// import { SlArrowDown } from "react-icons/sl";
+
 
 
 function Navbar() {

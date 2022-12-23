@@ -9,7 +9,6 @@ import {CartContext} from "../../App"
 
 function ShopItem() {
     const cartItem = useContext(CartContext);
-    // const {cart, setCart} = cartItem
     const cart = cartItem.cart
     const setCart = cartItem.setCart
     const { id, name } = useParams();

@@ -15,7 +15,6 @@
     background-repeat: no-repeat;
     text-align: center;
     background-size: cover;
-    /* background-color: red; */
 }
 
 .seventh-banner-info{
@@ -53,7 +52,6 @@
 
     .seventh-banner-info > h1{
         font-size: 40px;
-        /* color:black; */
     }
 
     .seventh-banner-info > button{
@@ -76,7 +74,6 @@
 
     .seventh-banner-info > h1{
         font-size: 40px;
-        /* color:black; */
     }
 
     .seventh-banner-info > button{
@@ -87,7 +84,6 @@
 @media screen and  (max-width:400px), (max-width:500px),(max-width:600px) {
     .seventhbanner{
         background-image: url('/public/Desktop-ModelY.jpeg');
-        /* background-size: 100% 100%; */
     }
 
     .seventh-banner-info{

@@ -1,19 +1,13 @@
 
 .home-logo {
-    /* display: flex; */
     width: 15%;
     justify-content: center;
 }
 
 .home-navbar {
     width:100%;
-    /* overflow: hidden; */
-    /* background-color: #fff; */
-    /* height: 80px; */
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     align-items: center;
     padding:25px 20px;
     height:80px;
@@ -72,26 +66,18 @@
     font-size: 14px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    /* height: 40px; */
     margin-right: 20px;
-    /* background-color: white; */
     font-size:15px;
-    /* border: 1px; */
-    /* border-style: solid; */
-    /* border-color: #e2e8f0; */
-    /* border-radius: 5px; */
     font-family: sans-serif;
     cursor: pointer;
     text-decoration: none;
     color:black;
-    /* text-align: center; */
 }
 
 .cart{
     cursor:pointer;
     font-size: 25px;
     margin-right: 25px;
-    /* color: black; */
 }
 
 .myAccount{
@@ -163,23 +149,10 @@
     color:orange;
 }
 
-/* @media screen and (max-width:400px) {
-    .navbar_smallscreen{
-        display:block;
-        cursor: pointer; 
-        align-items:center ;
-    }
-
-    .navbar-links{
-        display: none;
-    }
-} */
-
 @media screen and (max-width:1440px) {
     .navbar_smallscreen{
         display: none;
     }
-
 }
 
 @media screen and (max-width:900px),(max-width:1000px) {

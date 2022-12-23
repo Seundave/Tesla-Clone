@@ -8,15 +8,13 @@
 .shop_product{
     display: flex;
     margin-bottom: 50px;
-    /* padding: 0 48px; */
 }
 .shop_product > .left{
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
-    /* border-right: 5px solid black; */
+    margin: 50px 0px;
     padding: 24px 32px 0px 24px;
 }
 
@@ -123,8 +121,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 10px 0;
-    /* display: none; */
+    margin: 10px 0px;
 }
 
 .recommended_product > .recommended_products_cards > .product_card{
@@ -177,10 +174,6 @@
     .recommended_products_cards {
         display: flex;
         justify-content: center;
-        /* flex-wrap: wrap; */
-        /* width: 100%; */
-        /* margin: 10px 0px; */
-        /* display: none; */
     }
 
      .recommended_product > .recommended_products_cards > .product_card{
@@ -240,10 +233,6 @@
     .recommended_products_cards {
         display: flex;
         justify-content: center;
-        /* flex-wrap: wrap; */
-        /* width: 100%; */
-        /* margin: 10px 0px; */
-        /* display: none; */
     }
 }
 @media screen and (max-width:400px), (max-width:500px),(max-width:600px){
@@ -252,15 +241,10 @@
         margin-top: 30px;
     }
     .shop_product > .right {
-        /* width: 40%; */
-        /* padding-left: 16px; */
         margin-top: 0px;
     }
     .shop_product > .right > h2 {
         font-size: 28px;
-        /* line-height: 40px; */
-        /* padding: 0px; */
-        /* font-family: 'Montserrat', sans-serif; */
     }
 
     .shop_product > .right > .add {
@@ -270,16 +254,11 @@
 
     .recommended_product > h3 {
         font-size: 25px;
-        /* font-family: 'Montserrat', sans-serif; */
     }
 
     .recommended_products_cards {
         display: flex;
         justify-content: flex-start;
-        /* flex-wrap: wrap; */
-        /* width: 100%; */
-        /* margin: 10px 0px; */
-        /* display: none; */
     }
 
     .recommended_product > .recommended_products_cards > .product_card{
@@ -294,9 +273,6 @@
 @media screen and (max-width:300px) {
     .shop_product > .right > h2 {
         font-size: 20px;
-        /* line-height: 40px; */
-        /* padding: 0px; */
-        /* font-family: 'Montserrat', sans-serif; */
     }
 
     .shop_product > .right > .add {
@@ -306,6 +282,5 @@
 
     .recommended_product > h3 {
         font-size: 18px;
-        /* font-family: 'Montserrat', sans-serif; */
     }
 }

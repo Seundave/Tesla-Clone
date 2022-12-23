@@ -11,11 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-image: url('/public/_25-HP-SolarPanels-D.jpg'); */
-    /* background-repeat: no-repeat; */
     text-align: center;
-    /* background-size: contain; */
-    /* background-color: red; */
 }
 
 .sixth-banner-info{
@@ -25,7 +21,6 @@
 .sixth-banner-info> h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 600;
-    /* margin-top:30px; */
     font-size: 40px;
 }
 

@@ -19,20 +19,14 @@
     width:35%;
     display: flex;
     flex-direction: row;
-    /* padding-top:30px; */
     padding:0px  10px;
-    /* padding-left: 80px; */
 }
 
 .signup{
     display: flex;
     flex-direction: column;
     width:40%;
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin:auto;
-    /* background-color: aqua; */
-    
+    margin:auto;    
 }
 
 .Signup-text{
@@ -45,23 +39,17 @@
     font-family: 'Montserrat', sans-serif;
     padding-left:10%;
     margin-bottom: 30px;
-    /* margin-right:300px; */
-    /* margin-bottom: 15px; */
-    /* display: flex; */
-    /* float: left; */
 }
 
 .label-text{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     display: block;
-    /* margin-bottom:4px; */
     padding-left: 10%;
 }
 
 form{
     width:100%;
-    /* text-align: center; */
 }
 
 .submit{
@@ -161,10 +149,6 @@ form > input{
         padding-left: 30px;
         margin: 30px 0px;
     }
-
-    /* .password > a{
-        font-size:17px;
-    } */
 }
 
 @media screen and (max-width:900px), (max-width:1000px) {
@@ -177,10 +161,6 @@ form > input{
         justify-content: flex-start;
         padding-left: 30px;
     }
-
-    /* .password > a{
-        font-size:20px;
-    } */
 }
 
 @media screen and (max-width:300px) {
@@ -196,8 +176,4 @@ form > input{
     .signup-logo > img{
         width:50%;
     }
-
-     /* .password > a{
-        font-size:10px;
-    } */
 }

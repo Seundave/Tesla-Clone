@@ -61,20 +61,21 @@ const Cart = () => {
                                             <button onClick={() => handleChange(item, -1)} className="decrement">-</button>
                                         </div>
                                         <div className="remove-button">
-                                            {/* <button onClick={() => handleRemove(item.id)}>Remove</button> */}
                                             <AiFillDelete onClick={() => handleRemove(item.id)}/>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="total">
-                                    <span>Total Price of your Cart</span>
-                                    <span> ${price}</span>
-                                </div>
+                                
                             </div>
                     </div>
                     )}
                 )}
+                <div className="total">
+                <span>Total Price of your Cart is</span>
+                <span> ${price}</span>
             </div>
+            </div>
+            
             <Footer/>
         </article>
        
